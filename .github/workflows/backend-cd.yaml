@@ -25,7 +25,7 @@ jobs:
         run: pip install pipenv
       - name: Install dependencies
         working-directory: starter/backend
-        run: pipenv install
+        run: pipenv install --dev
       - name: Run lint
         working-directory: starter/backend
         run: pipenv run lint
